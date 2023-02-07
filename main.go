@@ -34,7 +34,7 @@ func showEmployees(c *gin.Context) {
 	var employee Employee
 
 	// MYSQL CONNECTION
-	db, err := sql.Open("mysql", "root:Pepperonipizza123.@tcp(127.0.0.1:3306)/")
+	db, err := sql.Open("mysql", "root:yourprivatepass@tcp(127.0.0.1:3306)/")
 	checkErr(err)
 	defer db.Close()
 
@@ -67,7 +67,7 @@ func employeeByID(c *gin.Context) {
 	var es []Employee
 
 	// MYSQL CONNECTION
-	db, err := sql.Open("mysql", "root:Pepperonipizza123.@tcp(127.0.0.1:3306)/")
+	db, err := sql.Open("mysql", "root:yourprivatepass@tcp(127.0.0.1:3306)/")
 	checkErr(err)
 	defer db.Close()
 
@@ -111,7 +111,7 @@ func newEmployee(c *gin.Context) {
 	ue := userEmployee{}
 
 	// MYSQL CONNECTION
-	db, err := sql.Open("mysql", "root:Pepperonipizza123.@tcp(127.0.0.1:3306)/")
+	db, err := sql.Open("mysql", "root:yourprivatepass@tcp(127.0.0.1:3306)/")
 	checkErr(err)
 	defer db.Close()
 
@@ -163,7 +163,7 @@ func showMustBeFired(c *gin.Context) {
 	var employeeToFire EmployeeMustBeFired
 
 	// MYSQL CONNECTION
-	db, err := sql.Open("mysql", "root:Pepperonipizza123.@tcp(127.0.0.1:3306)/")
+	db, err := sql.Open("mysql", "root:yourprivatepass@tcp(127.0.0.1:3306)/")
 	checkErr(err)
 	defer db.Close()
 
@@ -197,7 +197,7 @@ func fireAll(c *gin.Context) {
 	var employeesToFire []EmployeeMustBeFired
 	var employeeToFire EmployeeMustBeFired
 
-	db, err := sql.Open("mysql", "root:Pepperonipizza123.@tcp(127.0.0.1:3306)/")
+	db, err := sql.Open("mysql", "root:yourprivatepass@tcp(127.0.0.1:3306)/")
 	checkErr(err)
 
 	defer db.Close()
@@ -230,7 +230,7 @@ func fireAll(c *gin.Context) {
 
 func main() {
 	// MYSQL DATABASE AND TABLE CREATION/CONNECTION.
-	db, err := sql.Open("mysql", "root:Pepperonipizza123.@tcp(127.0.0.1:3306)/")
+	db, err := sql.Open("mysql", "root:yourprivatepass@tcp(127.0.0.1:3306)/")
 	checkErr(err)
 
 	defer db.Close()
