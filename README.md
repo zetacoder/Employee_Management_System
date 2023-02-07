@@ -1,6 +1,6 @@
 # Employee_Management_System
-Simple app that combinates an API REST architecture with CRUD principles using an MySQL database.
 Allows to manage your employees, hire nee employees, retrieve their information and if they doesnt work enough they can be fired.
+Simple app that combinates an API REST architecture with CRUD principles using an MySQL database.
 
 ## SERVER, ROUTES AND FUNCTIONALITIES
 #### Server: localhost:8080
